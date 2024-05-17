@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message ReturnCode {
+   int32 value = 1;
+   string message = 2;
+}
+
+message InputMessage {
+
+}
+
+service AllService {
+   rpc service(InputMessage) returns (ReturnCode);
+}

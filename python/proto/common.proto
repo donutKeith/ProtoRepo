@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message SimpleMessage {
+	string message = 1;
+}
+
+message SimpleResponse {
+	string response = 1;
+}
+
+message EmptyMessage {}
+
+service UIService {
+	rpc sendMessage(SimpleMessage) returns (SimpleResponse);
+	
+	rpc getMessage(EmptyMessage) returns (SimpleMessage);
+}

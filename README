@@ -1,0 +1,4 @@
+This repo is to test storing proto files and automating the building for various languages
+
+This repo simulates proto files that might need to be slightly different for different clients.
+It also has a shared folder for proto files that are the same across clients for all languages
